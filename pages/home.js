@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import Services from '../Components/services'
 function home() {
   return (
+    <>
     
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -33,13 +35,13 @@ function home() {
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   <a href="#" className="font-medium text-gray-500 hover:text-gray-900">Product</a>
     
-                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">Features</a>
+                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">Consultation</a>
     
-                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
+                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">Self-Checks</a>
     
-                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">Company</a>
+                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">Corporate Health</a>
     
-                  <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+               
                 </div>
               </nav>
             </div>
@@ -93,7 +95,7 @@ function home() {
                    </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                <Link href="/signin">
+                <Link href="/signup">
                   <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"> 
                   
                   Signup </a>
@@ -107,7 +109,15 @@ function home() {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 mt-12">
         <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
       </div>
+
+      {/* <div>
+        <h4 className="ml-8 mt-5 tracking-tight font-extrabold text-gray-700 sm:text-2xl md:text-2xl">What would you like to do today</h4>
+      </div> */}
     </div>
+   <Services/>
+
+    </>
+ 
     
   )
 }
